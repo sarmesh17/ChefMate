@@ -1,16 +1,44 @@
-# airecipe
+# 👨‍🍳 ChefMate – Your AI-Powered Kitchen Companion 🍽️
 
-A new Flutter project.
+ChefMate is an intelligent recipe generator built with **Flutter** and powered by **ChatGPT**. Just enter the ingredients you have at home, and ChefMate will whip up a personalized recipe for you – like having a chef in your pocket!
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ **Ingredient-Based Recipe Generator** – Input your ingredients and get a complete recipe in seconds.
+- 🧠 **AI Integration** – Uses ChatGPT (OpenAI API) to generate intelligent cooking suggestions.
+- 📋 **Clean & Modern UI** – Designed with Flutter to deliver a smooth, user-friendly experience.
+- 🍛 **Dummy JSON Integration** – Simulated recipe data for a realistic and structured display.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+| Home Screen | Ingredient Input |
+|-------------|------------------|
+| ![Home](screenshots/screen2.jpg) | ![Input](screenshots/screen3.jpg) |
+
+| Recipe Output | AI Prompt Screen |
+|----------------|------------------|
+| ![Recipe](screenshots/screen1.jpg) |
+
+> 📂 Place screenshots inside a `screenshots/` folder in the root of the project.
+
+---
+
+## 🧰 Tech Stack
+
+- **Flutter** – Cross-platform UI framework
+- **Dart** – Language for building the app
+- **OpenAI GPT (ChatGPT)** – Backend AI engine
+- **DummyJSON** – Sample structured recipe data
+
+---
+
+## ⚙️ Setup & Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/chefmate.git
+   cd chefmate
