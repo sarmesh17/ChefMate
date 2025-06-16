@@ -23,7 +23,6 @@ ChefMate is an intelligent recipe generator built with **Flutter** and powered b
 |----------------|------------------|
 | ![Recipe](screenshots/screen1.jpg) |
 
-> 📂 Place screenshots inside a `screenshots/` folder in the root of the project.
 
 ---
 
