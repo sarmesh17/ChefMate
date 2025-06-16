@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "724668509525",
+    "project_id": "airecipe-e2185",
+    "storage_bucket": "airecipe-e2185.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724668509525:android:2e53d778336095e9f3d3dc",
+        "android_client_info": {
+          "package_name": "com.example.airecipe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8ZihEI9TLS8CRqQh27ExywhZnvHQegGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

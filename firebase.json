@@ -1,0 +1,37 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "airecipe-e2185",
+          "appId": "1:724668509525:android:2e53d778336095e9f3d3dc",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "airecipe-e2185",
+          "configurations": {
+            "android": "1:724668509525:android:2e53d778336095e9f3d3dc",
+            "ios": "1:724668509525:ios:51fdc437790f6b91f3d3dc",
+            "web": "1:724668509525:web:5f7347e8e47f43d4f3d3dc",
+            "windows": "1:724668509525:web:778a3aaa071e720df3d3dc"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}
