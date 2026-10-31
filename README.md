@@ -1,43 +1,41 @@
-# 👨‍🍳 ChefMate – Your AI-Powered Kitchen Companion 🍽️
+# ChefMate
 
-ChefMate is an intelligent recipe generator built with **Flutter** and powered by **ChatGPT**. Just enter the ingredients you have at home, and ChefMate will whip up a personalized recipe for you – like having a chef in your pocket!
+AI recipe generator built with Flutter. Enter the ingredients you have at home and ChefMate generates a complete recipe using an LLM (GPT-4o mini).
 
----
+## Screenshots
 
-## 🚀 Features
+| Home | Ingredient input | Recipe output |
+| :---: | :---: | :---: |
+| <img src="screenshots/screen2.jpg" width="220"/> | <img src="screenshots/screen3.jpg" width="220"/> | <img src="screenshots/screen1.jpg" width="220"/> |
 
-- ✅ **Ingredient-Based Recipe Generator** – Input your ingredients and get a complete recipe in seconds.
-- 🧠 **AI Integration** – Uses ChatGPT (OpenAI API) to generate intelligent cooking suggestions.
-- 📋 **Clean & Modern UI** – Designed with Flutter to deliver a smooth, user-friendly experience.
-- 🍛 **Dummy JSON Integration** – Simulated recipe data for a realistic and structured display.
+## Features
 
----
+- **Ingredient-based recipes**: type what you have and get a full recipe with steps
+- **Input validation**: non-food queries are rejected before calling the API
+- **User accounts**: sign up and sign in with Firebase Authentication, profile data stored in Cloud Firestore
 
-## 📸 Screenshots
+## Tech stack
 
-| Home Screen | Ingredient Input |
-|-------------|------------------|
-| ![Home](screenshots/screen2.jpg) | ![Input](screenshots/screen3.jpg) |
+| Area | Choice |
+| --- | --- |
+| Framework | Flutter |
+| State management | Riverpod (`riverpod_annotation`) |
+| Navigation | go_router |
+| Networking | Dio |
+| Models | Freezed + json_serializable |
+| Backend | Firebase Auth, Cloud Firestore |
+| AI | GPT-4o mini via AIMLAPI chat completions |
 
-| Recipe Output | AI Prompt Screen |
-|----------------|------------------|
-| ![Recipe](screenshots/screen1.jpg) |
+## Run locally
 
-
----
-
-## 🧰 Tech Stack
-
-- **Flutter** – Cross-platform UI framework
-- **Dart** – Language for building the app
-- **OpenAI GPT (ChatGPT)** – Backend AI engine
-- **DummyJSON** – Sample structured recipe data
-
----
-
-## ⚙️ Setup & Run
-
-1. Clone the repository:
+1. Clone and install:
    ```bash
-   git clone https://github.com/yourusername/chefmate.git
-   cd chefmate
+   git clone https://github.com/sarmesh17/ChefMate.git
+   cd ChefMate
+   flutter pub get
+   ```
+2. Get an API key from [aimlapi.com](https://aimlapi.com).
+3. Run the app with your key. The key is passed at build time and is never stored in the code:
+   ```bash
+   flutter run --dart-define=AIML_API_KEY=your_key
+   ```

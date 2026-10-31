@@ -7,7 +7,15 @@ class ChatRepo {
   final Logger logger;
   ChatRepo(this.dio, this.logger);
 
+  static const _apiKey = String.fromEnvironment('AIML_API_KEY');
+
   Future<ChatCompletion> fetchResponse(String userInput) async {
+    if (_apiKey.isEmpty) {
+      throw StateError(
+        'AIML_API_KEY is missing. Run with --dart-define=AIML_API_KEY=your_key',
+      );
+    }
+
     // Simple validation: only allow input containing 'ingredients'
     final allowedKeywords = [
       'ingredients',
@@ -40,7 +48,7 @@ class ChatRepo {
         'https://api.aimlapi.com/v1/chat/completions',
         options: Options(
           headers: {
-            'Authorization': 'Bearer 231aac9ced5f4e578d880003a56c8fcf',
+            'Authorization': 'Bearer $_apiKey',
             'Content-Type': 'application/json',
             'Accept': '*/*',
           },
